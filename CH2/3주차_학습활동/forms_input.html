@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and input</title>
+</head>
+<body>
+    <form action="process.php">
+        <fieldset>
+            <legend>입력 양식</legend>
+            <br>
+            <!--text-->
+        <div>
+            <label for="name">이름</label><br>
+            <input type="text" id="name" placeholder="이름을 입력하세요">
+        </div>
+        <br>
+        <!--email-->
+        <div>
+            <label for="email">이메일</label><br>
+            <input type="email" name= "email" id ="email" placeholder="이메일을 입력하세요!">
+        </div>
+        <br>
+        <!--text_area-->
+        <div>
+            <label for="message">생각</label><br>
+            <textarea name="messsage" id="message" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <!--select-->
+        <div>
+            <label for="sex">성별</label><br>
+<select name="sex" id="sex">
+    <option value="male">여자</option>
+    <option value="male">남자</option>
+</select>
+        </div>
+        <br>
+        <!--number-->
+        <div>
+          <label for="age">나이</label><br>
+          <input type="number" name="age" id="age" placeholder="나이를 입력하세요">
+        </div>
+        <br>
+        <!--date-->
+        <div>
+            <label for="birthdate">생년월일</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <br>
+        <!--radio_button-->
+        <div>
+            <label for="membership">회원</label><br>
+            <input type="radio" name="membership" value="simple" id="membership">일반
+            <input type="radio" name="membership" value="standard" id="membership">기본
+            <input type="radio" name="membership" value="premium" id="membership">VIP
+        </div>
+        <br>
+        <!--checkbox-->
+        <div>
+            <label for="hobbies">관심사</label><br>
+            <input type="checkbox" name="hobbies" value="music" id="hobbies" checked>노래
+            <input type="checkbox" name="hobbies" value="sports" id="hobbies">스포츠
+            <input type="checkbox" name="hobbies" value="travel" id="hobbies">여행
+        </div>
+        <br>
+        <!--submit_button-->
+        <input type="submit" value="제출">
+        <button type="submit">다시 입력</button>
+    </form>
+</body>
+</html>
