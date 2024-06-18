@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Posts</h1>
+        <form action="/search" method="GET" class="form-inline mb-3">
+            <input type="text" name="query" class="form-control mr-2" placeholder="Search">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(post => { %>
+                    <tr>
+                        <td><a href="/edit/<%= post._id %>"><%= post.title %></a></td>
+                        <td><%= post.date %></td>
+                        <td>
+                            <form action="/delete/<%= post._id %>" method="POST" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/enter" class="btn btn-success">Add new post</a>
+    </div>
+</body>
+</html>

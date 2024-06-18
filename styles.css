@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0c;
+    color: #333;
+}
+
+header {
+    background-color: #0c0c0c;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.header-container img {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #f8dcf7;
+    margin-top: 18px;
+    position: sticky;
+    margin-bottom: -12px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+}
+
+.week {
+    background-color: #f8dcf7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+.week h2 {
+    margin-top: 0;
+    color: #141010;
+}
+/* Агуулгын холбоосуудын өнгийг өөрчилнө */
+.week p a {
+    color: black;  /* Энд холбоосын өнгийг өөрчилнө */
+    text-decoration:wavy;
+}
+
+.week p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Search Result</h1>
+        <div>
+            <h3><%= data.title %></h3>
+            <p><%= data.content %></p>
+            <p><small><%= data.date %></small></p>
+            <p><img src="<%= data.path %>" alt="Image" style="max-width: 100%; height: auto;"></p>
+            <a href="/list" class="btn btn-primary">Back to list</a>
+        </div>
+    </div>
+</body>
+</html>

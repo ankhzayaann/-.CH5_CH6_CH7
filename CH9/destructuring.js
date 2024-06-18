@@ -1,5 +1,3 @@
-
-
 let user = {
     id : 'jamsuham',
     pq : '1234',
@@ -8,7 +6,6 @@ let user = {
 };
 
 let {id, ...rest} = user;
-
 
 console.log(id);
 console.log(rest.pw);
